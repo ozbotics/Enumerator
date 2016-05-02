@@ -1,0 +1,38 @@
+#######################################
+# Syntax Coloring Map For Enumerator
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+EnumeratorBase	KEYWORD1
+Enumerator	KEYWORD1
+FilteredEnumerator	KEYWORD1
+TagFilteredEnumerator	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+#EnumeratorBase
+moveNext	KEYWORD2
+reset	KEYWORD2
+
+#Enumerator
+_selectNext	KEYWORD2
+getCurrent	KEYWORD2
+
+#FilteredEnumerator
+_selectNext	KEYWORD2
+_matches	KEYWORD2
+
+#TagFilteredEnumerator
+_matches	KEYWORD2
+setFilterTag	KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
