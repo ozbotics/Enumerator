@@ -1,14 +1,37 @@
+/** @file FilteredEnumerator.h 
+  *  Copyright (c) 2016 Ozbotics 
+  *  Distributed under the MIT license (see LICENSE)
+  */ 
 #ifndef _FILTERED_ENUMERATOR_H
 #define _FILTERED_ENUMERATOR_H
 
 #include <Enumerator.h>
 
+/**
+ * FilteredEnumerator class template
+ *
+ * Provides means to Iterate over a Filtered List of a particular Type
+ *  extend FilteredEnumerator and over-ride _matches() to control filtering
+ */
 template <class T>
 class FilteredEnumerator : public Enumerator<T> {
   protected:
-    T item;
-
+  
+   /**
+    * advance the index to the next valid item (if any)
+    *  using the _matches() to identify valid items
+    *
+    * @return nothing
+    */
     virtual void _selectNext();
+    
+   /**
+    * default implementation of filter match function (always true)
+    *  over-ride to define filter behaviour
+    *
+    * @param item The item under consideration consider
+    * @return true if targeted item matches filter
+    */   
     virtual bool _matches(T item);
     
   public:    
