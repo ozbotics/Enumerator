@@ -10,6 +10,7 @@ EnumeratorBase	KEYWORD1
 Enumerator	KEYWORD1
 FilteredEnumerator	KEYWORD1
 TagFilteredEnumerator	KEYWORD1
+TaggedItem	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
@@ -31,6 +32,8 @@ _matches	KEYWORD2
 _matches	KEYWORD2
 setFilterTag	KEYWORD2
 
+#TaggedItem
+matchesTag	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)

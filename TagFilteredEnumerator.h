@@ -16,7 +16,7 @@
 template <class TaggedItemT, class TagT>
 class TagFilteredEnumerator : public FilteredEnumerator<TaggedItemT> {
   protected:
-    TagT _tag;
+    TagT _tag; /**< protected variable  _tag  The filter tag */
 
    /**
     * selects only the items that have matching tag

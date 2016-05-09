@@ -39,7 +39,7 @@ class EnumeratorBase {
 template <class T>
 class Enumerator : public EnumeratorBase {
   protected:
-    LinkedList<T>* _list;  /**< pointer to the list to be iterated over */ 
+    LinkedList<T>* _list;  /**< protected variable  _list Pointer to the list to be iterated over */ 
     int _index;  /**< protected variable _index Index of the currently selected item (or -1, nothing selected) */ 
     
     
