@@ -25,8 +25,6 @@ class EnumeratorBase {
     
    /**
     * start at the begining of the list
-    *
-    * @return nothing
     */     
     virtual void reset();
 };
@@ -45,8 +43,6 @@ class Enumerator : public EnumeratorBase {
     
    /**
     * advance the index to the next valid item (if any)
-    *
-    * @return nothing
     */     
     virtual void _selectNext();
     
@@ -75,8 +71,6 @@ class Enumerator : public EnumeratorBase {
     
    /**
     * reset to the begining of the list
-    *
-    * @return nothing
     */     
     virtual void reset();
 };    

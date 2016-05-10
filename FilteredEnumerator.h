@@ -20,8 +20,6 @@ class FilteredEnumerator : public Enumerator<T> {
    /**
     * advance the index to the next valid item (if any)
     *  using the _matches() to identify valid items
-    *
-    * @return nothing
     */
     virtual void _selectNext();
     
@@ -30,11 +28,17 @@ class FilteredEnumerator : public Enumerator<T> {
     *  over-ride to define filter behaviour
     *
     * @param item The item under consideration consider
+    *
     * @return true if targeted item matches filter
     */   
     virtual bool _matches(T item);
     
-  public:    
+  public:  
+   /**
+    * Constructor
+    *
+    * @param list Pointer to the list
+    */
     FilteredEnumerator<T>(LinkedList<T>* list) : Enumerator<T>(list) { }
 };    
 

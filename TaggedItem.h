@@ -10,8 +10,8 @@
   */
 template <typename ItemT, typename TagT>
 struct TaggedItem {
-  ItemT item;
-  TagT tag;
+  ItemT item;  /**< variable item  The Item */ 
+  TagT tag;    /**< variable tag  The Tag */ 
   
  /**
   * does my tag match the specified tag
