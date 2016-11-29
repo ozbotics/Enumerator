@@ -63,6 +63,13 @@ class Enumerator : public EnumeratorBase {
     T getCurrent();
 
    /**
+    * get the current Index
+    *
+    * @return the current index
+    */     
+    int getCurrentIndex();
+    
+   /**
     * advance to the next valid item
     *
     * @return true if an Item is available
@@ -102,6 +109,11 @@ bool Enumerator<T>::moveNext() {
 template <class T>
 void Enumerator<T>::reset() {
   _index = -1;
+}
+
+template <class T>
+int Enumerator<T>::getCurrentIndex() {
+  return _index;
 }
 
 #endif  // _ENUMERATOR_H
